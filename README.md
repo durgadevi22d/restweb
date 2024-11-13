@@ -1,5 +1,5 @@
-# Ex.07 Restaurant Website
-## Date:
+# Ex.06 Restaurant Website
+## Date:13/11/2024
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -28,10 +28,227 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
+```
+index.html
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>Little Lemon</b></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            
+            <img src="logo.png" alt="Little Lemon Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Promotional Banner -->
+        <section class="promo-banner">
+            <h2>40% Off This Weekend</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris.</p>
+        </section>
+
+        <!-- Content Columns -->
+        <section class="content-columns">
+            <article class="column">
+                <h3>Our New Menu</h3>
+                <img src="img1.jpg" alt="New Menu">
+                <img src="img4.jpg" alt="New Menu">
+                <img src="img2.jpg" alt="New Menu">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris.</p>
+                <a href="#">See our new menu!!!</a>
+            </article>
+
+            <article class="column">
+                <h3>Book a Table</h3>
+                <img src="img5.jpg" alt="Book a Table">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris.</p>
+                <a href="#">Book your table now!!!</a>
+            </article>
+
+            <article class="column">
+                <h3>Opening Hours</h3>
+                <img src="img3.jpg" alt="Opening Hours">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris.</p>
+                <p>Mon - Fri: 2pm - 10pm<br>Sat: 2pm - 11pm<br>Sun: 2pm - 9pm</p>
+            </article>
+        </section>
+    </main>
+
+   
+    <footer>
+        <div class="footer-logo">
+            <img src="small.png" alt="Little Lemon Logo">
+        </div>
+        <div class="footer-text">
+            <p>© 2024 Little Lemon</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
+```
+
+styles.css
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f68d04;
+    color: #0b0039;
+}
+
+header, footer {
+    background-color: rgba(18, 65, 254, 0.578);
+    padding: 20px;
+    border-bottom: 1px solid rgba(18, 65, 254, 0.578);
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo */
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 450px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #e6d70a; /* Black background */
+    display: flex;
+    justify-content: center; /* Center the content inside the nav */
+    border-radius: 10px; /* Rounded corners */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex: none; /* Do not stretch menu items */
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: rgba(18, 65, 254, 0.578); /* White text color */
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333; /* Slightly darker hover effect */
+}
+
+/* Full-width Black Box Stretch */
+header {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Promotional Banner */
+.promo-banner {
+    background: url("promo\ banner.jpeg") center/cover no-repeat;
+    color: rgba(18, 65, 254, 0.578);
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Content Columns */
+.content-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    background-color: #c5ff15;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.column img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.column h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.column a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2d0c4c;
+    transition: color 0.3s;
+}
+
+.column a:hover {
+    color: #2d0c4c;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+```
 
 ## OUTPUT:
-
+![alt text](<Screenshot 2024-11-13 090923.png>)
+![alt text](<Screenshot 2024-11-13 090936.png>)
+![alt text](<Screenshot 2024-11-13 090944.png>)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
